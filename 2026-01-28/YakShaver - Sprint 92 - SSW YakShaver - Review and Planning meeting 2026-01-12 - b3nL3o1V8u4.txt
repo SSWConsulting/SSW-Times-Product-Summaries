@@ -1,0 +1,642 @@
+Product: YakShaver
+Title: Sprint 92 - SSW YakShaver - Review and Planning meeting 2026-01-12
+URL: https://www.youtube.com/watch?v=b3nL3o1V8u4
+UploadDate: 20260112
+
+Hey guys, welcome to sprint 92 for Yak
+Shaver. We got a lot done this sprint,
+so let's jump right into it.
+So the spring goal for this week was to
+improve the Yaksha desktop default
+prompt uh to include some dduplication
+and also temper consistency
+which is done and also get three canary
+test passes one from Hawk, one from G
+and one from Yuli and that was done this
+sprint as well.
+>> Can you bump up this one just a bit?
+>> Uh I can increase the zoom a little bit.
+Yeah. Yeah, thanks.
+>> Uh, so the time sheets mean that
+everyone's back in the team
+and onto the PBIS.
+So the first one is
+uh the same goal. So gap shaver desktop
+improving the gap shaver desktop prompt.
+So Tina, do you want to give us a bit of
+what you've done to kind of help make
+better uh PBIS? Yeah. So basically what
+happened is that um there was some
+updates in in the uh prompt engineering
+and of course the template. So those two
+work hand in hand uh into getting uh you
+know better issues like created created
+and also uh one key thing that was also
+added in there is that uh it's going to
+look into the repos like the issues
+right and the pis and if there's any if
+the new yak shave uh that was done has a
+you know a potential duplicate it's
+going to look for it and it's going to
+comment on that uh already existing
+issue.
+uh and CC the original, you know, um
+creator of that, you know, issue. Yeah.
+So, we're going to have all those in
+there. It's basically it.
+>> Oh, any also emo and also emoji has been
+added back into the titles. Yeah.
+>> Nice.
+>> Any questions on that?
+>> If not, I'll move on. So the next one
+was a bug that we had on the portal. So
+Baba, do you want to talk about what
+happened and how we fixed it?
+>> Yeah, sure. Uh so on uh portal dashboard
+uh on recent sh uh card as a null value
+was being passed to next.js JS link
+component and NexJS link component was
+throwing null null exception and uh we I
+worked with VO together uh to fix this
+issue and VO helped to upload uh source
+maps into production site and it helped
+us to identify where this error null
+error is coming from and and it has been
+fixed. Yeah. So currently if uh there is
+null value then it will show work item
+title instead of work item URL.
+Nice. Any questions on that?
+>> No.
+Uh I'll talk about the canary testing.
+So we had Hawk, Julie and G do some
+testing and we got some feedback from
+them.
+So, uh, Shark had some
+a lot of UX related issues, uh, but
+overall no blockers.
+Julie had no blockers as well. Um,
+let me just scroll all the way down to
+his one,
+the red Yuli here. So, he gave a test
+pass uh, with a bunch of UX issues,
+which is what um, Michaela has been
+doing. uh this sprint as well. So
+improving it, fixing all these issues in
+the Figma design so that we can
+implement them uh as well.
+And
+I had a few different issues. Uh he had
+a few issues on his map due to
+permissions. Uh but that has been fixed
+and yeah, those have been implemented
+already. Unfortunately, we can't we
+weren't able to get a a verbal test
+please from him because he's uh on
+leave. So, we just presume he's test.
+So, we close this issue, but he's um he
+can reopen it if he finds more issues.
+But, Stephen and I had a chat with him
+today and he said other than those two,
+he hasn't had any issues since. You you
+said that you weren't able to get a
+verbal test pass from GE, but you spoke
+to him today.
+>> So, I wasn't able to get him to write it
+into the in the PBI.
+>> But if you can say it, you can write it
+for him.
+>> Sure.
+>> Yeah. You don't? Yeah.
+>> Yeah. Just because he can't write it,
+you can do it for
+>> I believe that's what was done, right?
+I think what wasn't done is because he's
+on leave, he wasn't actually able to
+retest it, uh, retest the app. So, we
+just said, "We've fixed your blocking
+issues." And he said, "All right, cool."
+And that was it.
+>> Okay. Um, just for audio, it's better if
+you turn your head to the mic.
+>> Okay.
+>> That's much clearer. Yep. Thanks. Um,
+now I did notice that Hark and Julie
+specifically gave plenty of feedback in
+typing. Why aren't they using Yak shaver
+for their feedback?
+>> That is a good uh that's a good point.
+So, how to create PBIS? Yeah. How to
+create PBIS?
+>> Oh, yeah.
+>> So, he shaped it with Steven.
+>> Yeah. So, oh, he shaved them all with
+Steven. Good. And then there's all this
+extra typing underneath.
+>> So, you need
+>> I think Julie did that. I watched him go
+through the the canary test for part of
+it. I think he did it because he was
+slowly going through the canary test
+doing one at a time. So, he was just
+listing dot points that he found.
+Otherwise, it would have been one really
+long recording.
+>> All right. Julie's not in this meeting.
+>> He had to leave at 5:00 p.m.
+>> Oh, okay.
+All right. Maybe you should start a bit
+earlier so he can be in this meeting.
+Um,
+>> we started at 2:00. There was a lot to
+talk about.
+>> Wow, that is a long meeting. Okay. So,
+did you do many yak shaves during this
+meeting?
+>> Yeah, we did three or four, I think.
+>> Wow. Okay. Um,
+when you do this feedback, would it be
+better if you got the feedback from
+Hark, you saw all these things and you
+go, "Hold on, let me just let's fix a
+couple of these before we give it to GE
+and let's fix a couple of things from GE
+before we give it to Julie." like each
+version is slightly better.
+>> Would you agree that's a better approach
+than sending it out to three people?
+>> Is that not what we did?
+>> So we do them all in parallel.
+>> No, we did one after the other. So we
+did it sequentially.
+>> So after hearts we had a few issues and
+we can see one of them is already
+completed. So we do pick up the issues
+>> from that. The ones that are easy to
+fix.
+>> Okay. So shouldn't that G been before
+Yuli?
+The order was Hawk then Julie then.
+>> Okay. All right. I would have done it
+the other way but that's fine. So each
+person there's a couple of days between
+them and you did fix a few things. So
+each person got a newer version.
+>> Yeah. Correct.
+>> Okay. That's perfect. All right. Great.
+>> Uh the last thing I want to mention is
+the GPT 5.2 chat update for Yakova 1.0.
+So the team's version. Uh Stephen, you
+want to give a bit of context as to what
+has been changed?
+>> Uh yeah, so for the old Yaka teams
+version, we were using uh GPT40. Um but
+now we had a upgrade to GPT 5.2 uh chart
+model. Um I had a uh test through some
+people Julie Luis and Rick and they
+found um they cons they found the
+consistent experience with the old
+version but we might be get may we might
+be able to get cheaper uh rate per token
+because uh GPT 5.2 2 is cheaper but we
+still need to conduct a experiment to
+see how many tokens actually uh GPT 5.2
+consumes that shaves the same video uh
+with comparing to GPT40.
+So the total adds up uh if GPT 5.2 is
+cheaper.
+>> That's
+any questions? Hey,
+>> it's going to be a little bit of a
+if there are no questions, I'll move on.
+>> Move back to the email. Uh any questions
+on any of the PBIS here before I move
+on.
+>> If not, we'll move on. Baba, take it
+away on the code coverage.
+>> Yeah, thank you Louis. Uh code coverage
+remains same at 28.2% 2%
+and uh for about the production
+deployments uh we had uh two production
+deployments for teams app and 15
+production deployments for uh desktop
+app. I know that's true at that time.
+>> Back to you.
+>> How many?
+>> 15
+>> 15 deployments
+>> for top.
+>> That's a lot. Okay.
+>> Dependable.
+>> Well, we we we had about 15 uh PBIS
+done, right? So, it's one for each.
+>> Okay. What are they?
+>> There's a few dependable ones.
+>> Uh yeah, some of them are coming from
+dependable updates.
+>> So, every time
+>> So, they're they're doing all that in
+each each one. So each time that comes
+you get a new version.
+>> Yes.
+>> Okay.
+>> And Stephen,
+>> you go through the health.
+>> Yeah. So for the Yaka health uh we had
+100% availability again as always. And
+also we can see on the first chat
+there's uh a couple of failed requests.
+Um I had a look at the uh the the pigs.
+Um, they are all from the web scrap web
+scraper uh trying to find our
+robots.txt.
+Uh, so I think we could ignore this for
+now.
+>> And if
+>> what's the difference between the first
+one and the second one?
+>> The second the first one is for last
+seven days and the second one is uh for
+last 30 days.
+>> I think it means horizontally or
+vertically.
+>> I mean horizontally. Oh.
+The second
+uh Louis uh I think you have better
+this
+>> five xxx errors and these ones are 4xx
+errors
+>> right
+>> xx errors and 4x errors is what you said
+there
+>> 500 errors and 400 errors 400 oh
+>> 500 errors and four Oh Sorry. Okay.
+Maybe that should be in the title. If
+you can put it there.
+>> Yeah, I can make that change.
+>> Yeah, that' be clearer.
+>> Sure.
+>> Yeah. So, um, next let's move to the
+leaderboard. Uh, Tino on the top of the
+leaderboard and then we have Gordon and
+Thiago on the second and third.
+Uh let's let me get it back to you
+Louis. Yeah. Can you go through the map
+please? So many things to
+>> so for our app the progress is 86% now
+because we have add some more um PPIs
+due to the canary testing and yeah we
+can scroll down to check the backlog
+stats the fak shaver we have 41 newbis
+and in the last 30 days and 80% of them
+are labeled with yak shaver and 23 are
+done for Yakur desktop app we have um 60
+65 new PBIS and 91% of them are labeled
+and we have completed 38 um PBIS
+>> that's all for the backlo
+>> thank you for that Willow uh Tom can you
+go through R&D AI tools and tenants
+stats
+>> yeah Tina did a little bit of research
+and development work on our desktop app
+uh by prompt improving and adding some
+duplication
+information into the prompt as well as
+fixing up the title and emoji formatting
+there. In terms of the AI tools, there
+has been no changes.
+Uh, so far before I move to the 10 sets,
+any questions on that, Adam?
+>> No, all good.
+>> Very good. So, the tenants sits from
+last week. Uh this week we had uh we
+have a total number of tenants that is
+45.
+Um total number of tenants that
+completed their setup is still four.
+>> Sorry, is this the exact same stats I
+saw a week ago?
+>> Which one?
+>> Are you sure you've updated these stats?
+>> Yes.
+>> Yes.
+>> Okay.
+>> Yeah. So there's not frequent changes
+there.
+>> So you're telling me
+>> you can see down the bottom last last
+week we only had 35 team shaves and nine
+MCP shaves and this week we had 100 team
+shaves and 50 MCP shaves,
+>> right? Okay.
+>> Um can can you uh bold this week because
+often people have this week as the first
+one. Um but you need to I think I gave
+you guys a task to get this
+copied from the UI. Is that right?
+>> So this should be coming from the UI.
+You should be able to Yeah, we we have a
+PPI for that. Uh for next sprint,
+>> correct? So
+>> um
+>> now we have a a whole bunch of tenants
+every every week we should be trying to
+touch base with them, you know. And have
+we got the um have we got Discord
+working?
+Discord is working. Yeah,
+>> I think we have a server. Yeah.
+>> Yes.
+>> You are you have is Discord working
+fine?
+>> Is anyone like have you got the same
+structure of Tina? You trying to get
+traffic there?
+>> There's not been emphasis on that.
+>> Okay. Who can take uh who can be the
+discord person?
+>> I I can
+>> I I can too if need multiple person for
+that.
+Yeah, Adam, I'm happy to take it.
+>> So, Louis and Steven can join the
+Discord and look after it.
+>> Yep.
+>> On on that note as well, uh we did send
+out a few emails, right, Lewis? I think
+we need some escalation.
+>> Yes, we need some escalation plan maybe.
+Um, maybe we sent a second catchup email
+out, but then what is the escalation
+plan if either they don't respond or
+>> Yeah.
+>> Yeah.
+>> ignore it. So, we probably need to
+figure something out there as well.
+>> Yeah. Um, Stephen, can you just write
+down
+send follow-up email and I'll make a PBI
+for that and then I can
+>> Oh, no.
+following up with them.
+>> Yeah. Uh and as mentioned, we have in
+this sprint a PBI to get the tenant
+stats from the app much easier because
+at the moment it's a little bit of a
+hassle, especially to get the shaves
+between the teams and MCP app. And yeah,
+we're going to fix that as part of this
+PBI and then we can copy and paste it
+much easier.
+>> Okay. Uh just a general question. I know
+you've now got the MCP version working
+and it's quite good. Uh it felt like you
+started a fresh and that you weren't
+using much of what was in the old
+version. Um, is there any good lessons
+that you would do differently now or was
+it the right approach to just start from
+scratch
+uh and not try to put things into
+I don't know the portal or an API and
+like having it having it shared and
+continually used like both versions
+used.
+>> That's a very good question. We have a
+PBI down the track to utilize some of
+the Yak legacy Yakshva pipeline. Um
+because G mentioned that he had some
+issues giving access to GitHub MCP to uh
+to his account. And to avoid that
+um we could potentially utilize the
+Yaksha app that we created as part of
+the legacy version. This way the
+um company just needs to give access to
+the yak shaver app and then with the
+desktop app we can create a custom MCP.
+uh let's call it SSW Yak shaver MCP
+server and this way you don't have to
+give the MCP server your access to your
+own account and we can utilize some of
+that pipeline
+and in terms of rewriting it as a
+desktop app yeah I think that we did it
+from scratch helped a ton especially
+because it works completely different
+than the first one with MCP support.
+>> Does that answer your question, Adam?
+>> Okay,
+>> cool. Uh, I'll move on to the co-pilot
+stats. Tina, if you could give us a
+summary of it.
+>> Uh, hold on. Is this possibly accurate?
+Where's Willow? Tino, like where is
+this?
+This is on teams. I think you'll even
+take a picture of the whole the whole
+thing.
+>> Yeah. Some somehow we're not in there.
+>> And somehow you don't notice. Okay. All
+right. I I will fix it. Don't worry.
+Just keep going.
+>> So,
+>> can you app mention me? Um.
+>> Okay.
+>> Someone.
+>> Okay.
+So for the co-pilot stats, uh we have uh
+Sydney Borroom at the very top. So we
+have Caleb and Rose and Michaela in
+there, you know, beating Lewis for first
+place. And so we got Lewis the runner up
+and then Tomky on third place.
+>> Okay. So
+>> yeah. So for the copilot main
+achievement uh from copilot is that in
+the last sprint it was the act shaver
+improvements and stabilization. So first
+one is default prompt update merge
+improved the duplication and template
+consistency achieving uh wow and that's
+there uh achieving three canary test
+passes that should be on its very own
+bullet point. Um and then UI and UX
+enhancements. Uh login screen facelift
+and full Figma designs for the wizard
+UX. Also have bug fixes. Uh portal
+dashboard no URL error resolved.
+Workflow resilience improved for YouTube
+metadata updates. Technical upgrades
+migrated to GPT 4 uh 5.2 2 uh model and
+added a persistent OOTH for GitHub MCP
+and created a local database schema for
+activity tracking. So in short, embedded
+prompts, smoother UX, uh critical bug
+fixes and uh key technical improvements.
+Uh these are basically uh summarizes
+what has been done last uh for the last
+sprint. Uh
+>> yeah.
+>> Yeah, I think it's a good
+>> Tina Tina was AI accurate. Can you trust
+it?
+>> Yes. Yes, that was pretty accurate.
+Yeah. Yeah. And
+>> but achieving three car test passes
+should not be in the default prompt
+update merge uh bullet point. They
+messed that up.
+>> Okay.
+>> Otherwise, it was all good.
+>> Yeah.
+>> Thank you.
+>> Thank you.
+>> Giving you a new image, too.
+>> All right. Thank you.
+Uh
+first I'll get uh Rick to go through the
+sprint retro what went well.
+>> Okay. Thanks. Thanks Louis. So in the
+retrospective what went well. Uh many
+people likes um
+there there are lots of PBI done this
+sprint and many people likes the UI
+improvement done by Michaela and we we
+had three test passes from Canary
+testing and that and we got lots of
+great feedback
+and um
+yeah so I'll hand over to Colum talk
+about what didn't go fail.
+>> Uh yeah. So, what didn't go well?
+Obviously, Lewis pointed out a lot of UX
+issues due to code signing. So, it looks
+like an unsafe app. Uh which is
+obviously not cool. And we've got the um
+the CIS admins on the case fixing that
+up. There's not too much we can do about
+it yet. Uh we're blocked on that. Uh but
+we're hopefully resolving it soon. Um,
+and what I my feedback was Hark used the
+old Yak shaver to report issues in the
+new Yak shaver. Um, which I thought was
+back to front. So, I've suggested when
+people are canary testing and they're
+reporting issues in Yak Shaver, they
+should use the new Yak shaver to do it
+rather than the old one.
+>> Eating your own dog food. Yes,
+>> exactly. Uh, and Tom said a lot of logic
+built into the UI components on the
+desktop app. Basically, we've got a lot
+of um
+uh tech debt in the new desktop app and
+a lot of refactoring is required um to
+simplify that.
+>> Okay.
+>> Um so yeah, that's something that we're
+going to be working on next sprint. And
+then what needs to improve? So Rick has
+suggested the OOTH 2 flow must be fixed
+so that the client secret is not exposed
+uh which I agree with and must be done
+ASAP before we especially before we roll
+out to the public but ideally uh a long
+time before that and that's I think our
+priority next sprint um Tom said portal
+pipeline should build source maps uh to
+make it easier to debug. I think you had
+to sort of
+Willow manually assisted with the
+pipeline to fix that that issue uh this
+sprint and I guess be easier if it was
+just part of the pipeline. And Tom said
+build the UI as you need then refactor
+it. Make them generic reusable
+components and kiss. Um and I suggested
+a dry kiss is is optimal as well.
+And that's it. Any questions on the
+retro?
+>> No, that's uh excellent. Well, one one
+question. Um Tom, did you actually see
+the signs where upstairs was closed
+today?
+>> Yes, I did.
+>> And then you just ignore them.
+>> Yes, I did.
+>> Because I have fresh air and uh natural
+light here, which downstairs is not
+available.
+>> Yeah. And then you still need to talk to
+me. If I close upstairs, it's closed.
+can't just
+um now Callum, do you think if you work
+in a dog food factory, you would be
+eating the dog food?
+>> Absolutely. Um if the dog food wasn't
+fit for human consumption, I wouldn't be
+happy to stamp my face on the can.
+>> Excellent. All right, good to know.
+Let's go to the onto the next sprint. So
+sprint 93 the spring goal will be to for
+each Yaka team member to find an SSW
+employee to test the Yaka desktop app.
+So there should be seven Canary tests
+next week and also attempt to use an AI
+agent on a PBI they're working on.
+So we have a few PBI ser
+uh in here. So we have
+some new ones. Oh, I think these are
+repeated. Let me delete those. So,
+uh we have these from the uh Canary
+testing. So, some feedback which they
+want to be able to see the version of
+the Yak of Yakov easily because that is
+part of our feedback reports that we
+asked them to put their version as well.
+and just some general UI improvements.
+And we have this large one which uh Rick
+maybe you want to give us more context
+about what this will what this is about.
+>> Yep. So I mentioned in the retro that we
+need to um preventing exposing the
+client secret on the desktop app. So by
+fixing that we will um use authorization
+code plus PKCE. So that will that's um
+that flow wouldn't require a client
+secret. Hopefully um that will fix the
+problem.
+Okay. Uh any questions or feedback on
+the
+PBIS for next sprint?
+Nothing. I'll move on to the I'll let
+Tino go through the co-pilot. uh
+summary.
+>> All right. So the main focus for the
+next sprint is uh fix security. So
+eliminate exposed client secrets by
+implementing secure flows PKC and back
+end for front end to worker. Uh and
+refactoring workflow progress panel uh
+move logic from UI to back end for
+cleaner state management and
+scalability. Additional UX improvements
+uh show app version visibility and minor
+UI tweaks. And then we have sprit goal
+which is to complete more uh canary
+tests with internal users develop the
+stability before wider roll out and that
+is basically what uh has been put in and
+sprint go that is correct and of course
+we also added another one is to attempt
+to use AI agents on PBI to work on now
+that is uh been added as a sprinkle uh
+after you know the the the recording No,
+we did. Yeah. Yeah.
+>> Yeah. So, say that's pretty accurate on
+that. Any questions?
+>> No. All good.
+>> All good. This video will be on the
+Yakva YouTube channel. Thank you guys
+for joining me in this meeting. I'll see
+you next week. Thank you all. Thanks.
+>> Thank you. Bye.

@@ -1,0 +1,809 @@
+Product: TinaCloud
+Title: TinaCMS - Sprint 88 Review + Retro and Sprint 89 Forecast - 6 Jan 2026
+URL: https://www.youtube.com/watch?v=QEXgGkx-UsE
+UploadDate: 20260106
+
+Hi all and welcome to the Tina Cloud
+Antenna CMS Sprint 88 review and retro
+and the Sprint 89 forecast. First, I'll
+be going through the review.
+So, for our sprint goal, we have the new
+search functionality.
+Where we at, Jack?
+Yeah. So,
+um, this one's kind of been in in review
+for a little bit. Um, just this week we
+had a few more comments, um, for some
+fixes. Implemented those. Um, so now
+it's kind of been back in review.
+Um, and yeah, still waiting a review.
+Um, so hopefully
+>> throw my name into it as well if you
+want if you want to throw me under
+[laughter] the bus.
+No, Eli has been has been a great
+reviewer and has been uh reviewing when
+he can and yeah, putting good uh making
+some good feedback and changes. So, uh
+yeah, it's just it's coming along
+hopefully hopefully this the sprint.
+Okay, I feel like I'm having deja vu. Uh
+did we give this priority or did other
+things pop up or did somebody not give
+enough focus to it? like what happened
+and and in hindsight is there anything
+that could have happened since that was
+completed?
+>> Um I guess the only thing um I guess we
+could have been locked in a room
+together
+um or on a call
+all all days while you know fixes and
+stuff are happening. So, you know, there
+is some blocking time in there, but um
+yeah, that probably would have got it
+across the line.
+>> Yeah, I was trying to spend most of my
+time on reviewing it. Um but there was
+probably a little bit of downtime
+between when Jack finished his uh his
+reviewer comments, finished the reviewer
+comments, and then when I went to
+re-review it. Um, but yeah, there was a
+there was a lot of back and forth
+between review and that which kind of
+blew it out the sprint.
+>> Okay. In the last sprint, how many hours
+did you spend together on a call?
+>> Uh, you saying the sprint or the sprint
+before?
+>> Sprint. The sprint we're talking about
+the last 5 days.
+>> Yeah. Um,
+I'd say
+maybe 4 hours, maybe more.
+>> Yeah, I would say four plus for sure.
+>> So, I think you should have been
+spending that per day on it together.
+Like, if it's if it's the number one
+focus and we've had the same problem
+many times over,
+>> yeah, it feels like you should be giving
+it a good half a day every day until
+it's done.
+Yeah, I don't know if it was uh four
+hours. It might have been more, but um
+yeah,
+>> just the way you the way you work and
+you guys correct me if you disagree is
+you're on a call together and you give
+some feedback on some piece of code you
+don't like and the other person is
+fixing it as you're talking while you're
+looking at the next thing.
+>> Yeah. The only thing was that the
+feedback that I gave it did take a bit
+of time to fix it. So, it wasn't like we
+could quickly fix it there on the spot.
+It was like, "All right, I'll come back
+to you when it's when it's all done."
+>> Definitely. And that's some of the
+bigger things, but there's lots and lots
+[clears throat] of little things that
+can be done together.
+>> And you have the big chunk of work. And
+yeah, if if Jack needs to do some
+thinking and and some refactoring, it's
+going to take a day or two, then so be
+it. But
+>> but that's not what it feels like
+happened.
+>> Yeah, there was a little bit of that.
+Uh, and there was also a little bit of
+um, yeah, we could have definitely
+stayed on the call together to
+streamline that process a bit.
+>> Okay. Uh, Brooke, any comments from you?
+>> No, I was focusing on other things such
+as your email task, so I didn't get a
+chance to comment on any of that stuff.
+>> Okay. Well,
+I think that this is a one that has been
+going on for uh how many how many
+sprints now, Jack, since we've done been
+doing the search?
+>> Uh I think four.
+>> Think more.
+>> Going on to five, I believe. Oh, maybe
+more. [snorts]
+>> Yeah. Uh, it's definitely been blocking
+blocking the rules one from going live a
+few a few times until they gave up on
+waiting. [clears throat]
+>> Yeah.
+>> Yeah. It definitely could have went in a
+bit sooner if I wasn't too onto the the
+reveal process, but I wanted to make
+sure that it was, you know, in a good
+state with what went in.
+>> Oh, no. Uh, of course I'm I'm not
+complaining about getting the quality
+right. I'm just uh the focus just
+doesn't seem like it's there
+>> on this one.
+>> And and that's kind of why I'm
+mentioning you, Brooke. I know you're
+working on other things, but if they're
+not swarming and you can help in any
+manner, I would prefer that we work on
+the sprint goal. Number one, if
+everybody in the team can help.
+Yeah.
+All right, let's move on. All
+right, moving on.
+For our spits, we had 4,000 uh this
+week.
+And Tencloud, we had 64 hours build to
+Brooke and myself.
+And for Tennis CMS, we had 48 hours
+build to Jack and Ivonne.
+for the sprint backlog. We don't have
+anything too cool to to show, but yeah,
+things worth mentioning was yeah, that
+search is um there ready to uh finish
+the last bit of review. Um the title
+tags on all pages. Brooke, you want to
+speak to that?
+>> Yeah, so I put some work into updating
+the title tags, which are the little
+titles you see on the top of each tab.
+Um, previously Tina Cloud, no matter
+what tab you went to, it was always
+saying just Tina Cloud. Um, but now they
+are descriptive and tell you where
+you're at in the page.
+>> And this is useful for when you share a
+page because this is what goes into the
+subject of an email.
+>> Cool.
+And the improve caching optimize build
+request handling Jack.
+>> Yeah. So this was another SSW rules one
+um [clears throat] well that we've
+really noticed with SSW rules anyway.
+It's been around for for quite a while.
+Uh it's essentially cing build requests.
+So
+um I've I had a bit of investigation um
+the sprint. I've now created five kind
+of spike PBIS
+um so that we can we can go in different
+directions to see how we want to uh one
+capture this information so through some
+metrics and stuff like that uh because
+we it's kind of an unknown at the moment
+of you know do uh do our requests
+actually use the C um you know sure sure
+we can see we can we can you know guess
+we can fill in the blanks because
+they're not hitting our API
+um you know what what is the the hit
+rate and stuff like that um and then
+also how we want to solve kind of the
+the root issues and I've broken that
+down into kind of four four items
+um [snorts] so I guess the the biggest
+the biggest one is
+currently there's no cing overlap so
+every time a new build is created we are
+querying all content
+again and on rules you know uh they
+could be four PRs a day that's four
+[clears throat] you know rebuilds of the
+whole site um invalidating all cache
+four times and reaching everything uh
+which just isn't [snorts] really that uh
+amazing um and we can definitely make
+some strides to improve that
+>> uh how much time did you spend on that
+one, Joe?
+>> Um, just in the downtime of my uh like
+waiting for review and stuff like that.
+So, maybe [clears throat and cough]
+maybe eight hours in total,
+>> right? Okay. And what is the downtime?
+Waiting for feedback from Eli or what is
+it waiting for builds or
+>> Yeah, yeah, a bit of both. Like Tina
+Cloud does take a while to to get up and
+running. Um it's kind of kind of the
+pain when building Tina CMS and Tin
+Cloud. You know, you make a change in
+Tina Cloud. I mean Tina CMS, then you
+have to wait for that to build and then
+>> test it. Yeah.
+>> Is that one more technically interesting
+than the search?
+>> Um [clears throat]
+I think so. Yeah, there's definitely a
+lot more u optimizations that we can
+that we can do there. Um,
+>> right.
+>> You know,
+>> and do you feel like a a gravitational
+pull to it that it's easier to work on
+than the search?
+>> Um, no, I wouldn't I wouldn't say that.
+Um,
+no. Search search is the the goal to get
+that over the line, but it's just Yeah.
+>> Okay.
+>> Sweet. Moving down to the sprint burnup.
+So there is 21 remaining and three
+completed.
+Code coverage not yet logged. Uh
+production deployments we've had one
+deployment for Tina cloud and one
+release for Tennis CMS.
+For the application health overview
+timeline, um we have seen identity API
+500s increase from 4 to 14 and the
+content API HTTP 500s uh increased from
+2K to 4K. So uh that increase in errors
+there. Looks like the rules team is back
+online and building their project which
+is causing our content API errors to go
+up. [sighs]
+uh will there be any time spent on any
+of those?
+>> Uh are you going to look at reducing the
+numbers on any of that
+>> and if so which one can you highlight
+which one you you would look at?
+>> Yeah well the uh content API HP500s uh
+we need to we are looking at and that's
+around the caching investigation that
+Jack's doing.
+>> Which one is it?
+>> That is the improved caching optimized
+build is handling.
+>> Which one on the charts? [clears throat]
+It is the content [clears throat] API
+errors. Um, which you can see
+>> that one.
+>> I don't know if you can see my cursor.
+>> Yeah, just it's very small. But, uh,
+that only looks like it's got two big
+spikes.
+>> Yeah. So,
+>> is that you're trying to eliminate those
+spikes, are you?
+>> Yeah. That one big spike would be uh
+when a when the rules project build ran.
+Oh, I see.
+>> Yeah,
+>> that's not easy to repro, is it?
+>> Um, well, yeah, Jack's I think Jack is
+looking to reproduce it,
+>> but um I don't think it is easy. No.
+>> Okay. All right, cool.
+>> Yeah.
+>> Is open and closed for Oh, sorry. I seen
+uh Sam, you had your hand up.
+Oh. Uh, it's much smaller, but like the
+identity API ones. Um,
+>> yeah.
+>> Do you know what they were?
+>> Um, they're mostly around um GitHub
+authorization tokens and it seems like
+it's just uh yeah, it's coming from
+GitHub. Like 500 responses come from
+GitHub and then we're just uh rethrowing
+that and there's yeah, don't think
+there's too much that we can do around
+that.
+So issues open and closed for Tennis
+CMS. Uh last month we had 18 issues
+opened and 15 closed. And for this month
+we had uh two issues opened and one
+closed.
+Passing over to Brook. Yes. Cool. So in
+terms of organizations and projects
+created over the last 7 days, we had an
+increase from 65 to 79 which is awesome
+to see. Um looking at the total looking
+at the last month. So if you scroll down
+here, this is the trend for the last
+month of projects and organizations
+created and we can see a slight down
+trend. Um although it's still looking
+pretty healthy.
+In terms of user onboarding, we had an
+increase of 6% to 10% of users making it
+through the whole process. And then in
+terms of the um users accepting invites,
+we had 27% increase to 32% which is
+awesome to see.
+Uh in terms of people completing the
+onboarding, it seems we've had a bit of
+a decrease coming to the end of this
+week, but things have remained pretty
+stable. Um, what's good to see is that
+the actors user, which is our
+recommended choice, is still the primary
+option being chosen here.
+Um, in terms of unique cloners over the
+last two weeks, we had a big decrease
+almost by half in both the barebones
+starter and the next year starter.
+However, people see still seem to be
+loving the self-hosted demo, which has
+remained pretty constant.
+Looking at the packages, uh the Tina CMS
+package downloads for the week. We had a
+pretty big increase from 18,000 to
+26,000. Um we suspect this is due to
+some of the Cena CMS releases. Um and a
+lot of these stats going up could be a
+sign of everyone coming back from the
+Christmas period.
+In terms of the epics, we had no
+progress towards any of these.
+looking at the R&D. Jack's spent some
+work on the search bar if he wants to
+speak more to that.
+>> Um, yeah. So, I mean, I've kind of
+already talked about it uh before, but
+yeah, just refactoring how some of the
+endpoints worked uh the sprint. Um,
+yeah, and just stuff in review.
+>> Sweet. In terms of the AI tools, most
+people are still using some form of
+C-pilot, Yak Shaver, and Claude Code.
+Um,
+people still seem to also be using
+cursor, which is cool.
+>> And Brooke, you definitely didn't get
+involved in any yak shaves
+>> in this last week.
+>> Okay.
+>> All right.
+Uh, in terms of the speaking summary,
+Eli did most of the speaking, which
+makes sense. um with Jack, Ivan, and I
+coming in as needed.
+>> Yeah. We also think uh speaker one might
+have been Ivonne's uh wife.
+>> Oh, really? In the background.
+>> Yeah.
+>> Oh,
+>> we think it might be able to pick it up
+and recognize voices.
+>> Really? [clears throat]
+>> I'm sus on that, but
+>> yeah. Well, we see it lined up. So, uh,
+it could be
+>> Do you think this is generated from the
+transcript or do you think it's
+generated from listening to specific
+voices?
+>> Well,
+if uh if it was if it was his wife, then
+I would say it would be voices. If it
+wasn't, then yeah, probably transcript.
+>> Yeah.
+>> Okay, cool.
+Uh the main action point it said was to
+add labels to the collaborate list in
+terms of things that were completed.
+>> Um
+>> is that accurate or not accurate?
+Can you trust AI or not?
+>> Uh
+>> in terms I think that was one of the
+main things we did. Yeah.
+>> Yeah.
+>> Okay. So it's accurate. Okay. Now, what
+I'd like you to do, um, before we get to
+the retro, can you click on the link
+that Callum has just sent through? He
+just threw it into Claude
+>> and he's going to give you some
+uh let's have a quick look at this. He
+he's just thrown the transcript in. So,
+that's all he's done. And you can see
+there's four participants and they did
+four things. So, uh, scroll down a
+little.
+Uh, it's kind of worked out that there's
+three parts of this. Scroll up a touch.
+Yep. There was a premeating chat where
+you talked about hockey and ice skates
+and then there's a sprint review which
+you talked about search and post hog and
+then you did a sprint planning. So, it's
+all worked this out from the transcript.
+You know, maybe you said let's start the
+sprint planning. I don't know. But it's
+worked it out. And
+>> was there a retro in there?
+Uh, no. There was no retro. So, you must
+have done the retro when after you
+stopped recording.
+>> Yeah.
+>> Yeah. Interesting. Good. And then scroll
+down to the speaking time.
+>> Based on not listening to anything, just
+looking at the transcript, Eli talks the
+most, then Jack, then Brooke, then
+Ivanne, which is different from the
+other thing which uh was counting Ivan's
+wife in the background.
+Um so discussion topics it says
+well you mostly talked about cing and
+search and then image uploads and then
+Adam's email tasks and then post hog and
+repo and support tickets. Okay
+the next bit
+and
+it's talking about the people that
+weren't there. I don't know how it works
+this out. How could it work out who
+wasn't there?
+must have been referred to a bunch of
+times, I guess.
+>> Did you guys talk about that?
+>> Yes. Yes, we did.
+>> Oh, wow.
+>> This is actually really cool. Like that.
+That's a pretty good summary.
+>> That's unbelievable. It's worked out.
+Who's not there? Okay.
+>> Um Ben or Ben? Who's Ben? Ben Neo,
+right?
+>> Ben was probably how I called him.
+[laughter]
+>> Yeah, it's probably your
+Kiwi accent. That was hilarious. And
+then it said completed this sprint.
+Well, you got these half like imagine
+sending this to a client. So this is
+what we did this week. Half width
+speaker specify added labels to the
+collaborator list. Branch status and
+repo cleanup. And we're blocked with
+Matt being away,
+Adam reviewing the branch status video,
+Ivan's next sprint allocation, and Cloud
+Front.
+Is that Cloud Flare?
+>> No, Cloud Front. CloudFront's uh cloud
+flare of AWS.
+>> Oh, right. Okay. All right. All right.
+Keep going.
+>> Okay. Just go to the top. Is there
+anything else interesting there, Colin?
+>> Click on rolls and see if it works out.
+Who's who?
+Uh, it thinks Eli is a scrum master
+based on what he's doing. He drove
+entire meeting agenda. So that's
+probably a scrum master. Jack is a
+developer
+and u it notices he's got deep technical
+explanations of cing
+but issues are cing work deferred for
+spikes. The original PBI was unclear.
+And then Brooke is a developer and he's
+working on seven email tasks from Adam
+and issues noticed post hog not done
+prioritize for Adam's email task. Pretty
+good summary work invisible in sprint
+and Ivan what's he doing? Let's have a
+look.
+Ivan is completing the repo cleanup 35
+repos to delete provided context on
+cloudfront cing and PR sent for
+approval. Hopefully uh Ivan when you
+sent the PRs did you call the person to
+get it approved or you just threw it
+over the fence?
+>> Uh I sent it to Brook. He couldn't
+review them, so I sent him to the common
+chat and today I was going to chase
+someone about it.
+>> I finished up on the PR.
+>> You got to find somebody.
+>> Yesterday.
+>> Yeah. Okay. But it's important that you
+find someone and you do it together.
+Yeah. Don't Don't throw it into the chat
+and kind of throw it over the fence.
+Yeah. Work with somebody. Um may or may
+not be on Tina's next sprint. Okay. If
+you're not sure about that, you should
+definitely be calling me or Benchmaster.
+Yeah, the I was going to call you after
+this to figure out what happens next.
+>> You would try to call before, not after
+cuz it's important for the planning.
+Yeah. So, yeah, you know, uh you know,
+on soon as you on your way to work, just
+text me and say you'll be calling as
+soon as you get to work or whatever. Um
+but yeah, get this done before you
+start. All right. Uh keep going down.
+Major role issues identified. No
+retrospective. Oh, wow. PO is absent.
+Uh, it thinks I'm the PO. It doesn't
+know Matt's the PO just from the way
+you're talking. Keep going down.
+Shadow work. Brook sprint largely
+invisible.
+Uh, okay. Maybe I should be sending
+doing all those as Jack shaves Brooke,
+but I think I attempted to, but you were
+unavailable.
+>> Um, so I just sent emails. U Ivon's next
+sprint is unclear.
+Uh, yeah. Okay. Good, good, good. Uh,
+anything else there, Colin, that you
+think's interesting?
+>> I'm not sure. I haven't actually looked
+at it closely. I just generated this and
+then jumped in with me.
+>> Uh, what's dynamics?
+>> Team dynamics. It looks like
+>> you have strong technical depth, but
+there's not strong decision authority.
+Just looking at that. So, uh, but
+there's pretty good meeting engagement,
+especially by is it Brooke or Eli? Not
+what color is that? Eli Eli has strong
+meeting engagement
+and Jack has strong technical depth
+based on this. Yeah. Very very cool.
+Uh
+yeah. And then look, it thinks that Eli
+is the central facilitator and Jack's
+the technical leader and Brook's a
+status reporter and Avan is a technical
+collaborator.
+Very clever based on just a transcript.
+>> Super cool. Yeah.
+>> Yeah. Thanks, K. That was that was fun.
+And how complicated was your prompt?
+>> Uh, it was just one sentence that said,
+"Generate a cool dashboard based on this
+transcript."
+>> So, yeah, you can imagine what what he
+could have got had he said, "Now, look
+out for your weaknesses or give critical
+feedback or anything like that." It
+would it would probably be giving you
+harsher feedback or something.
+>> Should you point it towards like a ECW
+rule or
+>> Nope. No. Okay.
+>> Just the one sentence. That's all it
+took. But yeah, you can imagine, as Adam
+said, how good you can make it if if you
+did put some effort into the prompts.
+>> For sure. [snorts]
+>> You get a standardized template and
+stuff like that.
+>> It's better than Copart.
+>> Yeah, it is.
+>> The only reason The only reason I tried
+it is because yesterday Copilot was
+broken. So, I thought, why don't we give
+Claude a go? And then it actually did a
+much better job.
+Yeah.
+>> Nuts.
+>> Great.
+>> All right.
+>> More.
+All right.
+So, ready to get into the sprint
+retrospective.
+>> Jack, take it away.
+>> Cool. So, what went well? Uh Avon has
+gone through all the CVES to do with
+Reacts and all of that and has fixed
+them among the like 90 repos that we
+currently have. Um which is awesome
+work. Um yeah, stuff's in review. We'll
+we'll look at that. Um Eli said the
+search is looking good, especially with
+the new changes from the sprint. So
+hopefully again we'll get that in uh
+this coming sprint. What didn't go so
+well?
+Um, Brook said Adam is sending email
+related tasks as or sending tasks as
+emails instead of making them as PPIs,
+check shaves, etc. Uh, maybe we can see
+how that can go. Um, and then for
+>> just on that,
+>> yep,
+>> Brooke, do you know there's a rule
+>> on turning an email into a PBI?
+>> Yes. I feel like at the point of writing
+the email, it might have also just been
+easier if you jumped into the cloud repo
+and wrote up an issue in the same email
+format and then that avoids the
+duplication work there.
+>> Yes, that's that's correct. Um, but if
+you do get one from a client or from
+Discord, you've still got to do it.
+>> Yep.
+>> Yeah, maybe that's something you
+actually could do.
+I thought there was some work for
+>> turning emails into PBIS. Anyway,
+>> we did something about that on uh
+brainstorming for Yak Shaver, but it's
+not we did we didn't take it any further
+than a proof of concept.
+>> Do you know who did it?
+>> Yeah, me.
+>> Oh, [laughter]
+okay. Next next task for you after the
+search. Don't get don't get any ideas.
+right now. I had Okay, cool. Um, cool.
+Uh, improvements.
+Um, we're seeing some more community
+contributors making PRs, which is really
+cool to see. Um, but I'm seeing a lot of
+them are having troubles running the
+project. Um, and that's because in
+outside of our monor repo, we've got
+this examples folder and we've also got
+this experimentals examples folder. And
+they're very out of date and most of
+them don't work. Uh, so we're going to
+clean them up. We've already had a PBI
+for this in previous sprints, but it
+kind of got pushed back due to other um
+urgent matters, but I think we should
+just delete them and maybe update the
+docs on how to get some good examples.
+>> Is that something you could look at,
+Eva?
+>> Sure. Yeah. Okay.
+>> Yep. Yeah, that' be that' be awesome.
+Um, and then also we're having some PRs
+that are, you know, the turnaround time
+is is kind of long. Um, so maybe we
+should, you know, after daily, everyone
+should just, uh, have a look at some PRs
+to review. Um,
+uh, etc.
+>> Yeah. Uh, Ivan, if you're having
+problems with this, please go to Sam and
+get some advice so that you can get past
+this. But basically, you've got like
+everybody's busy. You just kind of got
+to be semi putting yourself forward and
+interrupting people and being uh
+slightly more aggressive.
+>> Yes, Sam.
+>> Oh, I was just going to suggest exactly
+the same thing with PRs. So, I won't say
+that again, but the other thing is that
+it's really good to as a team make an
+agreement that done code is infinitely
+more valuable than in inflight code.
+Inflight code is worth nothing because
+it doesn't do anything. PR code that
+could actually go in is worth
+everything. So like fundamentally
+whatever you're touching right now
+doesn't matter unless it's an like an
+actual bug fix or something like a hot
+fix.
+So if someone asks for a PR review, you
+should put everything down and do it.
+>> Agreed.
+>> You have to agree to that as a team
+though. Just saying.
+>> Yeah.
+>> All right. So moving on to the uh sprint
+89 forecast. So our sprint goal, same
+thing. New search functionality. Let's
+get it done. And for the forecast,
+um we just
+>> uh sorry, could we also put put there
+for to get those uh uh I think I would
+like since everyone's going to be
+getting SSW rules on Tina now. I really
+think there should be a focus on the
+orth or any getting started stuff. Each
+person to edit a rule at the moment is
+going to go through the orth procedures
+have to get their account done. It seems
+crazy to me when you know the single if
+a company signs up for single sign on it
+feels like it they should be instantly
+in and it sends them an email something
+like that. They shouldn't have to go
+through this sugaring procedure to ask
+for stuff. it feels very very
+>> full of friction and it doesn't feel
+like they're an SSO customer, you know,
+and I think that is my number one issue
+that people are going to have a bad
+first experience of the orth and it
+doesn't make you love Tina.
+Okay, so they get to the OR, it doesn't
+work. They need to know to go to sugar
+learning, follow a procedure, then they
+do the right thing and then they get in.
+I would say to you, even if you go right
+now to the off screen, you're not sure,
+even though you've come in from rules
+that you're meant to be using SSO,
+you would click on that GitHub button
+just as easily as the other as entering
+your email address. Um I think that work
+is really high priority.
+>> Anything? Yeah. Okay. Cool. Just set
+that as a string goal to focus on
+authentication and signup issues.
+Cool. Uh yeah, things to note for our
+backlog obviously the search. Um we are
+also looking at image upload and
+deletion messages. Um, proof caching is
+a big one for us uh to get that uh
+looked at uh decreasing those content
+API errors and
+um yeah, that's about it. Just finishing
+off the the work that was left over from
+last sprint.
+>> Yeah, add add an one in there um before
+you press send on this today.
+Okay, I'll need to take take one off
+just cuz we are at capacity. Um
+yeah, I I'll have a look at that after.
+I'll
+>> Okay,
+>> I might just take off the media
+management then
+>> for myself.
+>> Uh is that media management that error
+that Jack saw with Michaela? Okay,
+where's that one?
+>> That one is the top one. Image upload
+and deletion error messages.
+>> Okay, definitely Bob. That's uh
+uh I guess uh it's it's only happens
+when you drag and drop. Is that right?
+>> No, it's not drag and drop. Okay.
+>> Yeah, it seems like a
+different kind of error just in general.
+Uh I some people there were some people
+really surprised by Michaela's error
+because people like Jean and and Hugo
+said we tested uh all that stuff and I
+never saw it. I never dragged and
+dropped but I didn't see any errors with
+uploading images.
+>> Yeah. Uh yeah, me and Ivan believe it's
+something related to
+>> Oh, okay.
+>> which could be the reason why they
+didn't see it in the first place.
+>> Okay, got it.
+>> Thanks. Anyway, moving on. Uh, copilot
+that. Um, next main item to implement um
+is the new search functionality. So,
+yeah, pretty spot on with that one.
+Um, cool.
+So, thank you all for attending. This
+meeting will be uploaded to the Tina CMS
+YouTube channel under the sprint
+summaries players. Hope you enjoyed.
+Cheers.
+>> Thanks everyone. See you.

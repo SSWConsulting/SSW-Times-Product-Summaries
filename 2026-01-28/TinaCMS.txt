@@ -1,0 +1,6 @@
+- Delivered search improvements: shipped the new search feature, added a visible (mobile-friendly) Search button, and hotfixed a Discord-reported search bug
+- Simplified SSO sign-in: added an Enterprise SSO login button and made the SSO page easier to reach
+- Standardized collaborator invites: unified invite tables across the app with consistent components and clearer multi-select
+- Fixed page titles: Tina Cloud tabs now show descriptive page titles instead of a generic label
+- Cleaned up UI: improved the org/project header and breadcrumb alignment to reduce visual noise
+- Added telemetry: instrumented branch sync with PostHog to support investigations into performance/issues

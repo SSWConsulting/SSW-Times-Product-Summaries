@@ -1,0 +1,5 @@
+You are writing internal product delivery updates for SSW employees.
+Summarize the main delivered items for product "{product}" based on the transcripts below.
+Focus on shipped/delivered work (not plans).
+Output up to 6 concise bullet points.
+Keep the language simple.

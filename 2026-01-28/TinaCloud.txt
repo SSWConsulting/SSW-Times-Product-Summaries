@@ -1,0 +1,6 @@
+- Made SSO sign‑in clearer: added a visible “Enterprise SSO login” button on the sign‑in page (kept email detection too)
+- Standardized collaborator invitation tables across TinaCloud and improved multi‑select and UI consistency
+- Improved the top banner: cleaned up org/project breadcrumb alignment and simplified the header
+- Added a search button in the UI to make searching clearer and mobile‑friendly
+- Updated browser tab titles so each page shows a descriptive title (no longer always “Tina Cloud”)
+- Added PostHog telemetry to branch sync operations to help diagnose performance issues

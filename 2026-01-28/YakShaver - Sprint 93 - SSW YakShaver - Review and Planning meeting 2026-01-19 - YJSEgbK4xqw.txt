@@ -1,0 +1,879 @@
+Product: YakShaver
+Title: Sprint 93 - SSW YakShaver - Review and Planning meeting 2026-01-19
+URL: https://www.youtube.com/watch?v=YJSEgbK4xqw
+UploadDate: 20260119
+
+Hey guys, welcome to Yak Chev sprint
+number 93 review. So we got lots of
+testers this week um trying to break the
+Yaka desktop app and we got our results.
+So let's have a look at it now. So the
+sprint goal was to get each Yak was for
+each Yaka team member to find an SSW
+employee to test Yaka desktop. We got
+five in total. uh that gave us the test
+pass and we also attempted to use an AI
+agent on a PBI that they were working
+on. So I think everyone use it uh use an
+AI agent to try to improve the PB
+they're working on and it seemed pretty
+successful.
+So here's the time sheet. So I've got
+Baba Willow, myself mostly working full
+time and got Tom, Rick, Michaela for
+most days
+and onto the PBI standard sprint.
+So the first one is done by was done by
+Steven. So it was a full is a refactor
+on the workflow UI for the desktop app.
+So Stephen, do you give us some uh
+details about that?
+Uh yeah sure. Um so this this refactor
+is because uh we had a very complicated
+uh UI rendering logic on the workflow
+panel. Uh we had a only we had only two
+outcomes on this panel. Either we uh
+successfully execute the pipeline or we
+fail in the middle and we have to abort
+the entire task. So uh after the
+refactor we can have the uh can you
+scroll down a little bit?
+Yeah we can uh independently uh handle
+the each steps and each arrows can be
+handled independent as well. Um and also
+this will uh simplify the way we
+debugging and also uh scaling the steps
+into the workflow.
+Um any questions?
+>> Can you show the before again?
+>> Uh on the left hand side is the before
+and right hand side is the new one.
+>> Oh, I see.
+>> Yeah. So before we had a global error
+message. We didn't know uh the error
+come which for come from which step. But
+now each step has independent error
+message.
+>> That's much better. Clear. Cool.
+Yeah.
+Um the next one was Can I just ask
+question about the sprint goal? Um so
+the canary testing just checking did I
+just pinged the canary testing rule in
+the chat there. Um are we following
+that? Do we have like an XLS of all the
+people who have done it so far, what
+their feedback was, all that kind of
+stuff like
+>> uh Yeah. So we do have a spreadsheet. Um
+it hasn't been updated. So, Stephen, can
+I get you to write that down and I'll
+and then call me afterwards and we we
+can update the spreadsheet.
+>> Nice. Double check the rule and make
+sure all the fields, you know, whatever
+columns we're expecting are there and
+all that.
+>> Yeah. Yeah.
+>> Yeah. Not down.
+>> Cool. Thank you. All good. Otherwise,
+>> yeah, yeah, that's good. Thank you.
+>> Cool. The next one I want to bring up is
+done was one done by Tom. So adding
+preset MCP servers and uh onboarding
+checklist to add auto add integrations.
+So
+uh before uh so Thomas has made a done
+video here. I'll just show a quick
+screenshot. So before when in the wizard
+we had a step for connecting an MCP and
+unless you knew the exact URL and maybe
+what transport it's using it's very
+confusing. Um so after it is now a very
+simple click once and connect and this
+makes it much easier to connect to
+GitHub and Azure DevOps
+>> and if you want to go above and beyond
+you can add your own custom one. So the
+option is still there.
+>> Question what's that GitHub app
+authorization required thing.
+Uh
+>> so this is an old one. I think this
+one's not in there anymore. Correct
+Rick? Correct. That's removed.
+>> All right. Beautiful. And if that list
+gets too long, we can always make a drop
+down.
+>> Yeah. So,
+yeah, the list gets long, we the we'll
+have to see what we can do. Um, yeah, at
+the moment since there's only two that
+we set by default.
+>> Yeah, it's great.
+>> Yeah, we can leave it as is.
+>> Cool. Any questions?
+>> Um, can you actually ever send emails at
+the moment like the desktop app? No,
+>> it can't at the moment.
+>> Okay. Because would that be another MCP
+you have to hook up to your your
+Exchange MCP or something?
+>> Uh Lewis, it it can uh if you have an
+MCP server that is capable of sending
+emails.
+>> That's the answer for everything.
+>> I've been corrected,
+>> but it's it's true if you can.
+>> Well, that's exactly why I was asking
+because I was wondering if the third one
+that should be here would be your your
+Outlook or Exchange or whatever. follow
+the create to
+file template that call like create to
+email whatever it is
+>> maybe if it's an MCP server then yes
+>> it's not it's
+>> I guess but but
+>> yeah you could create a mail to link I
+suppose
+>> yeah or you there's possibly some sort
+of outlook MCP server available that can
+send an email in which case you can just
+plug it
+So I guess the the short answer is
+yes, you can send emails, but the long
+answer is you need to have some you need
+to find it out. There's no like connect
+immediately
+uh for that yet.
+Does that answer your question, Julie?
+>> Yeah.
+>> Okay. Uh do you want to see email be
+prioritized?
+>> Uh not necessarily. It's just, you know,
+it's one thing that you won't be able to
+do uh on the desktop app that you can do
+on the teams app at the moment. So, um
+yeah, I don't know. Adam, what do you
+reckon? How important is email?
+>> Do we just want to push this to
+>> uh Well, it's a step backwards. The
+current version has it. So, it's a
+regression, but uh
+>> how is it a regression if it supports it
+via MCP?
+>> Well, no. Yeah. So long as so what the
+MCP is being surfaced here is easy ones
+to set up. I'm wondering if we need a
+third one.
+All right. So, you're suggesting we add
+an email easy connect thing.
+>> Yeah. And an email should be there by
+default.
+>> Box. Um,
+>> yeah. And just a little UI one. Can we
+have the disconnect and connect buttons
+the same width, please?
+>> And you'll notice that there is another
+button there that says install app. And
+that's not as tall as the other ones.
+>> Oh, sorry. This one has been removed.
+This is a a legacy thing. It's been
+removed in in the current version.
+>> Okay. Why are we looking at old stuff?
+>> This is just when the video was made.
+>> Yeah.
+>> Okay.
+>> I'll I'll do I'll quickly record a video
+for that. So,
+>> two things. The first one is an email.
+>> Video until you've got me to watch that
+video with you.
+>> I mean, I'm recording a shave right now.
+>> Oh, you're yak shaving right now. Sorry.
+>> Yeah. Yeah. I'm going to start it
+shave.
+>> Love it.
+>> Hey, so I've got a two features for the
+Yasha desktop app. So the first one is
+in uh with GitHub and Azure DevOps. I
+want another one that connects to an
+email server uh thing like email MCP
+server maybe so I can send emails to
+other people. And the second thing I
+want is that this disconnect and connect
+buttons I want them the same width so
+that there's no it doesn't look offset.
+Anything else to add?
+>> I think that's it.
+>> Oh, thank you.
+I let the process in the back frame if
+it's all good. I'll continue on with the
+PPIs.
+>> Yeah, thank you.
+>> No worries.
+>> Um, actually, sorry, just quickly, uh,
+seeing as these are just hooking up to
+MCPS, does would adding, uh, Jira to
+that list be relatively straightforward?
+>> Yes, it would be pretty straightforward.
+Um,
+>> is that already in the backlog?
+[snorts]
+>> If I'm not mistaken, it should be. I can
+definitely double check. Steak here
+write it down and if it's not there
+>> I already not it down.
+>> Thank you.
+>> Okay. Amazing.
+>> Just cuz I mean that that was that was I
+don't know if you guys remember but way
+back when that was why we made this
+shift in the first place is to be easier
+to hook up to Jura.
+>> It it is definitely easier. I think I've
+tested it and it has worked but making
+it a connect button would definitely be
+easier.
+Cool. Uh next one is the portal UI
+enhancement. So Baba you made some
+changes. going to go through what has
+been
+>> changed.
+>> Yes.
+>> Yeah. I made some simple changes to
+portal uh projects page. So first one is
+uh here we are showing backlog icons on
+backlog URL column instead of full URL
+and also I [clears throat] renamed
+recent work items from two recent
+shapes. Uh that makes sense with the
+actual project. And second change is in
+the actual project details page. Uh on
+top right corner we are showing this
+recent shaves count as well.
+>> That's all.
+>> Uh relating to this Steven I thought you
+were putting a grid under here that had
+the uh shaves that have been done for
+this project.
+There's a PD but it has a bit dragged in
+to the
+>> All right. But essentially when it's
+done under you'll have the project name
+and then you'll have two tabs. One which
+is the details, one one which is the
+shapes, right?
+>> Uh yeah, I think that's the what what we
+mentioned in the PBI. Yes.
+>> Sure. Okay. Good.
+>> Any other comments about the designs?
+anything you want changed
+now being continue.
+So the next one is covering sort of the
+the canary testing that was done uh this
+sprint. So we had Jake, Lorraine, Lydia,
+Luke, Mau, and Alex um conduct the
+canary testing and they've all given a
+pass. Uh there's a lot of uh UX and UI
+issues that they've gotten and a few
+bugs that have been reported that uh
+we've
+that we're going to have to deal with um
+in the next couple sprints. There's a
+few comments for from each and they've
+been shaved into PBIS here. So we can
+drag them into the sprint when
+we get to them.
+Oh, any questions?
+If not, then I'll move on.
+So, Baba, can I get you to go through
+the code coverage, please?
+>> Okay. Uh, so code coverage remains same
+at 28.2%.
+And about the production releases, we
+had one production release for Teams app
+and uh 15 production releases for uh
+desktop app.
+Louis
+>> I guess Stephen to go through the health
+and leaderboard.
+>> Uh thank you Louis. Um so for the
+availability we had a couple days um had
+a lower availability uh when we checked
+the um issue that's because we have a
+tenant which is our test account has
+been uh expired but it's not been
+refreshed. So we have removed that
+tenant which is the our test account
+again. Um and now it's back to 100%.
+And if we go to the leaderboard we have
+uh Tina on the top and followed by Baba
+and Callum.
+And Ken had a 22 increase. That's huge
+increase.
+I think this is after we've added the
+the ability for desktop shaves to be
+added to the leaderboard, right?
+>> Yeah.
+>> Yeah. Back to you, Luis.
+>> Thank you. I'll pass it on to Willlet to
+go through the road map.
+>> Sure. So for the for our appic we have
+plus 3% um improvement and we also get
+3% for the portal UIUX improvements too
+and we can scroll down to see the
+backlog stats. So for yak shaver we got
+29 my 42 new eyes are label and this has
+been a little drop down because maybe
+because um we are doing the canary
+testing and someone uh um reporting
+issues not using the yak share because
+they're finding issues and for the back
+um yak share desktop app we have um 77
+um new pbis labeled with yak shaver um
+We got 87 new PPIs in total. And for R&D
+part, I did the some research on
+>> Hold on.
+>> Just just have a pause before you move
+on to the next one.
+>> Um,
+>> this these stats.
+>> Uh, have you got them coming out of Yak
+Shaver yet? Because obviously every team
+needs to get this and it would be lovely
+to go into Yak Shaver, click your
+product and copy this this stuff out.
+No. Is it on the backlog?
+>> No, it it is on the backlog. Um I think
+last I checked I think it was closed,
+but I remember there was one sprint
+where you said you wanted it and then
+Callum
+agree with you. But when I look at the
+uh PBI, there was a discussion
+uh as a team that
+>> we feel like this wasn't needed in V1.
+Has that changed? Um, Callum has has
+changed whether you wanted this in yak
+shaver or not.
+>> Uh, no, I don't think it belongs in yak
+shaver.
+>> Oh, you don't want in yak shaver at all?
+>> No, because it would it would only make
+sense in the legacy yak shaver.
+>> Oh, it doesn't make sense.
+>> Not in you've got you've got yak shaver
+desktop stats.
+>> We do, but that only makes sense if
+you're like it only makes sense for
+SSW's usage of yak shaver and not for
+everyone in the world's usage. So if we
+did add it, we'd only be adding it for
+us. And the way
+>> So why wouldn't why wouldn't
+[clears throat] another team using
+>> Well, for example, we actually prompt
+Yak shaver to put the Yak shaver tag on
+issues. That's part of our prompt.
+>> Oh yes.
+>> So if another team in another customer
+Yaka decided they didn't want to prompt
+that, then how would this operate?
+>> So we don't we don't get everybody to
+put that Yak shaver by default.
+>> No, it's just a prompt.
+>> Shouldn't we? Cuz we want the branding.
+But how do we do it in Jira or Azure
+DevOps or anything else?
+>> Uh well I if the you could say if the
+backlog is GitHub add the tag.
+I think that's okay.
+>> I was thinking we we could try and see
+if a custom prompt would work the same
+because it's in the end we're just
+seeing how many PBIS were created in the
+last month that have the label.
+>> Yeah. So
+>> and Callum if they were using Jura or
+Azure DevOps and it didn't have that
+although you do have tags in Azure
+DevOps
+>> and you do have them in Jura by the way
+but let's just say that they didn't have
+the tag we need you can have it showing
+an error on the project so you go to
+project it says this this one isn't set
+up with this tag or this tag is missing
+please add it
+no I think I think encouraging every
+team to use it is important
+>> right Yeah, the these aren't really the
+act shaver stats either. They're just
+backlog stats, aren't they? We just
+happen to have one
+column which is about special,
+>> right? Okay. But it it is they are stats
+of that backlog and the goal of that
+backlog is to have most of
+>> you could get a GitHub.
+>> Yeah. But we we want everybody to to get
+it. We want them to use the tool. It's a
+it's a it's a part of encouraging good
+usage of the tool.
+But if you can get the same report out
+of GitHub, then why are we rebuilding
+it? Yeah,
+>> does anyone agree with me or disagree?
+Like Callum and I have different
+opinions.
+>> I can see the technical difficulty. Um,
+we're setting it up very very flexibly
+to be able to and for instance, Yaka may
+not be used primarily to make backlog
+items.
+>> Anybody else have an opinions?
+Yeah, I I don't see the problem in
+encouraging them to have a tag called
+yak shaver.
+Seems a good thing.
+>> Yeah, I think it's a good thing.
+>> I think having a tag for yak shaver is
+is good. I think getting these results
+could probably be styles of a custom
+prompt. Like we don't need a specific
+page for it,
+>> like a specific prompt in yak shaver.
+>> Yeah, you could do that. Um, I also
+think you should only be able to turn
+off that that tagging if you're paying
+for it.
+Like, how do we make that work? I don't
+know. It could not it could not work
+unless you have that tag there.
+Well, you detect if that backlog has
+that tag and if not
+Yeah. Well, it's not the tag on the
+backlog.
+is the app shaver putting the tag on the
+issues that it creates, right?
+>> Yeah, but you can only put a tag there
+if the tag exists.
+>> Sure. So, we we can check if the tag
+exists, but that doesn't mean they're
+using it.
+>> No, but it's putting there and it's it's
+branding. I don't know. Anyway, we can
+take it offline.
+>> Yeah, we can. Yeah, we can.
+>> I think I think your team can talk about
+it because it sounds sounds like a nice
+thing to see. You know how we talked
+about before you got the project and one
+tab is project details one is yak shaves
+one is stats
+>> it's quite nice
+>> stats but we we can see the the shaves
+that have happened already this is
+basically just adding into that what we
+already have all the other issues that
+have been created not through a shaver
+right
+>> that's correct but the stat the the the
+details are all the fields the shaves
+are every single shave
+>> and this is aggregated stats.
+>> It's different.
+>> Yeah, I guess it's just weird to pull in
+all the non-yak shaver related stuff
+into Yak shaver. That's all.
+>> I don't think so. Honestly, I don't let
+you guys chat about Does anybody else
+have anything?
+>> No,
+>> I guess we talk about this after the
+meeting.
+>> Let's just continue on. So, we to
+continue the R&D.
+>> Yeah, sure. So for IND part I did some
+research on how to display the watch the
+video um PBIS and for Rick he has did
+the spike on secure os to flow with the
+authorization code and pixie or bff as
+token [clears throat] broker. Yeah
+that's all back to you.
+>> Thank you Willow. Uh Rick we go through
+the AI tools and stuff.
+>> Sure. So we have a few changes. So
+Callum now uses clock cord and uh myself
+has changed my model from GPT 5.2 to GPT
+5.2 codecs
+and Baba has started using Gemini 3 Pro
+and that's pretty much the change. And
+in terms of tenant stats uh a little
+surprise we have a a bump we have seven
+seven shades from the tenants. So some
+of them were done by uh Michaela but we
+found out there are a few shapes that's
+actually done by the client. So myself
+will follow up with the clients see how
+they go what's their experience.
+>> Uh so next up we have the co-pilot
+stats. So we can compare Claude and uh
+teams. So Claude gives us this nice pie
+chart of speakers. that has me first uh
+as scrum master and then Callum as a PO
+and then Rick
+>> and we see the difference here in
+co-pilot it says that I was first Callum
+is second but Steven is third so I think
+there's a bit I think the co-pilot one's
+probably a bit more accurate because
+it's using the actual recording whereas
+the whereas Claude is probably just
+using the transcription here and it's
+also added Tina even though we have a
+Tina and Tina's not here today so
+[laughter] it's it's coming up with uh
+so we got Tina in here for the for the
+sprint as well
+[laughter]
+as for the main action point so we see
+here the major deliverables from claude
+says y enhancements backend improvements
+workflow refactor and user experience
+um whereas co-pilot says the main issue
+completed was the refactor of the
+workflow progress UI.
+So,
+uh, Co-Pilot has just the one PBI, which
+was the I guess the biggest change for
+this sprint, but it didn't really cover
+our sprint goal. Um, which is which
+means it it was off the mark a little
+bit for CO. they had more generalized um
+was it generalized summary but when you
+actually dive deeper some of them are
+well
+yeah I guess it's pretty accurate here
+um but again it didn't really cover the
+sprint goal so I guess
+they did cover but not they didn't
+really
+say the main action point was you know
+getting the canary tests and also the
+second one which is using the AI agent.
+So they none of them covered them.
+>> I'll pass it on to Callum to go through
+the sprint retro.
+>> Uh yeah. So what went well? Uh we had
+many nonSSW shaves as you said 17 which
+is good. And
+>> who was it? Um, is that a new client or
+an old client?
+>> It's not a new client from this month.
+It was an existing client that
+>> finally got around to it.
+>> Yes,
+>> that's good. And, uh, we obviously had a
+lot of Canary test passes as well. We're
+building momentum on those. I think
+every additional one has less and less
+major feedback, which is obviously the
+point of canary testing, but it's good
+to see it in action. Um, and Rick said
+the UIUX has improved a lot after a few
+rounds of Canary tests.
+>> So, did we have it so we gave it to
+someone, they gave feedback, we fixed
+something, we gave it to the next
+person, or did we just have a few people
+doing it concurrently?
+>> Um, I think for the the first couple of
+weeks we were doing it sequentially. Um,
+I think this week we open it up to a
+more concurrent system so we could get
+more people on it. M okay
+>> cuz we had fixed most of the major
+issues.
+>> Uh what didn't go so well? Lewis said
+need to get yak shaving customer emails
+out. Last few I've sent out had been
+ignored. So Lewis is trying to contact
+customers and is getting ghosted. Um, I
+said the security issue that's blocking
+the public roll out is still there and
+that's our priority for this sprint and
+it'll probably take up next sprint as
+well. Um, and Willow said she's
+struggling to use prompts to make the
+content match the PBI template. So I
+think we'll need to
+uh invest a little more heavily in uh
+designing tools to help the app shaver
+fill in templates uh to make sure we
+follow it properly. Uh it it could also
+have something to do with the fact we're
+using GPT5 mini um to do that which is
+kind of an old model and I've suggest we
+try upgrading the model to see if that
+uh has any effect. Uh what needs to
+improve? Steven said be before
+implementing features with AI assistance
+we should use AI to review the existing
+code if tech debt already exists AI will
+replicate current patterns and
+unintentionally amplify them. Uh so I I
+guess Steven's experience this sprint
+was we already had tech debt and then
+using AI to add more features just sort
+of made the tech debt worse.
+>> So the humans are the problem.
+It's the visa lesson.
+>> Yeah, I guess so.
+>> Uh sometimes it's not necessarily the
+human. It's because uh when we added
+feature at the beginning uh we didn't
+plan another feature and we try to
+>> when when when
+um while certain things grows the
+initial planning or initial architecture
+becomes a problem and if we keep using
+AI to implement the feature AI won't
+recognize there's issue over there it
+will just copy the existing pattern and
+add more code there.
+>> Yeah, makes sense.
+>> Cool. Uh, any feedback or questions
+before I move on to the
+Thank you for that, Alen. I'll move on
+to the next sprint planning. So, the
+sprint goal will be to implement the
+secure oorthth two flow.
+So, oh, and also just a heads up, the
+meeting will be next Tuesday because
+next Monday is Australia Day.
+So be next Tuesday, same time. And so we
+have all these PBIS that are related
+with the sprint goal. So we're going to
+tackle those um and try to get the the
+desktop app more secure this way.
+Now scrolling down to here for uh Claude
+uh Claude's um summary for what to do
+next. It seems that they got it pretty
+spot on. The top priority was implement
+secure all two or flow which is exactly
+the same as the sprint goal
+and let's see what copilot has to say.
+The main item to do next is implement a
+secure or flow on the back end. So
+exactly the same. So seems like given a
+very simple uh simple sprint goal it's
+able to decipher that perfectly.
+Any questions on the PBIS being done
+next sprint?
+Uh, very few of them have um emojis. Is
+that because the desktop app doesn't do
+emojis?
+>> Uh, no. That that was my bad. I I use a
+custom prompt that didn't specify
+emojis. I can add them after. So, make a
+note.
+>> If I if I use you actually have a
+desktop now, will it put emojis in or
+no?
+>> The default prompts will put emojis in.
+Yes. I have a custom one that doesn't.
+Right. You bastard. Okay. [laughter]
+Cool.
+>> All right. Cool. Any any questions? Any
+other questions or feedback?
+>> Have we looked at the quad stats?
+>> Yeah.
+>> Yep. Do you want me to go through them
+again?
+>> We looked at Willow's claude stats, not
+the ones that afterwards.
+>> That's right.
+>> Okay. No, I was I was hoping for the the
+critical insights. Okay. Never mind. So,
+so we have have we have you got that
+link?
+>> Yeah, it's in the chat.
+>> Oh, can you open the the link in the
+chat?
+>> Uh because I want you to put that link
+in the email.
+>> Do you know how you have co-pilot stats?
+Put the cord stats and uh this just zoom
+it up a bit, but it says a sprawling
+2-hour sprint ceremony that achieved
+external adoption milestones
+uh while continuing to defer security
+issues blocking the public roll out. The
+team committed to a sprint goal, the
+lead developer openly doubted, while
+only completing 33% of the previous
+action items. I think AI is very
+doubtful. Is it on the money with its
+comments?
+>> I hope so.
+>> Yeah. All right, let's scroll down a
+little.
+Uh, some hard truths. The team committed
+to a sprint goal their lead developer
+openly said might not be achievable.
+Rick said that might not be sorted by
+this sprint. And no one listened to
+Rick. Uh 33% action complete. Success is
+unacceptable. The team commits to more
+than it can deliver, making promises
+meaningless. Whoa.
+>> Uh you're a twoperson [laughter]
+meeting with six spectators. Lewis and
+Colum are consuming 53% of the air time
+while the other four team members
+contribute under 10%.
+All right. So Babard, Willow, Steven,
+you're going to contribute a bit more.
+Uh, the team building an AI product
+doesn't actually use AI tools
+themselves. That's a credibility gap.
+Customers will notice that can't be
+true.
+>> What is that about?
+>> I think that's based on a comment that I
+made uh because no one had tried out um
+the CLI tools after the chewing the fat.
+>> They didn't try it out after we did a
+chewing the fat and you're developing
+our premier AI product. that chewing the
+fat is uh making me feel that you're not
+giving 100%. You definitely should have
+uh tried to create a rule using that
+method. You can you can ask it to create
+a rule using that uh command line
+method. You should Callum was right. I
+would be saying the same thing. Uh go to
+timeline.
+Okay, you can see that that's based on
+the transcript rather than copilot which
+is listening to things. Uh, scroll down
+a few things. Uh, it's got a couple of
+quotes there. So, u AI tools discussion.
+Callum says, "Nope, no one cares about
+AI development in the most AI excited
+team." Okay. And look at this time
+wasting. There was an extended demo
+without pre-esting. Who was that?
+I remember somebody did a 12minute demo
+without testing. AI tools preference
+tangent.
+Okay, that's I think that's good. I
+would ignore that.
+>> The leaderboard UI recurring issue. Uh I
+feel the same, Stephen. I think you
+should have definitely called me up
+during the last sprint to get that video
+sorted and and done. Uh all right, let's
+go to the next tab.
+people enrolls. Oh, so it's trying to
+work out by listening to the transcript
+who's who works out. Lewis is the uh
+scrum master. Good. Callum's a pro
+donut. Very good. Uh that's good. In the
+other sprint review with Tina, it said,
+was it Tina? No, Eagle Eye. Um Toby was
+running that and it said Toby is a proxy
+product owner because he keeps referring
+to Adam. Adam and then it then it had
+one. Where is Adams?
+Uh Rick. So that that shows you're
+taking a lot more ownership. Rick um is
+a senior de that works works you out.
+Rick, it says the highest value per
+minute. He's got critical oorthth
+experience. He underells himself. He
+waits to be asked. That's not good.
+Okay. Uh Steven is mixed. Uh, Willow is
+underutilized and Michaela admitted
+being distracted by email during the
+sprint review. Okay. [laughter]
+All right. Awesome. Yes, all those
+things are good because you don't want
+to say them in real client meetings.
+Okay. Insights
+and the elephants in the room. Well,
+we've already heard about the first one.
+We've heard about the second one. And
+YouTube O still unressed. Even
+completing OAF way unblock the full
+public roll out. YouTube needs a
+separate solution. I want to know about
+this. What the hell is this about?
+>> Well, this is the security stuff that I
+said is going to take up next sprint.
+So, it's more than just I was hoping
+that we could get it all sorted this
+sprint.
+>> Yeah.
+>> But it turned out it's going to take an
+additional week after this week uh
+before we can roll this out to anyone
+expect.
+>> Okay. All right. Got it. All right.
+Scroll up. What's the last tap?
+Uh, okay. That's good. Keep going down.
+Nothing. Nothing. Nothing. No. The
+predictions. The sprint goal is going to
+fail. [laughter]
+Okay. Code coverage is going to remain
+stagnant. It doesn't have much hope for
+you. Let's go up. [laughter]
+Okay. Trends. What's the trends? Uh, the
+trends. Oh,
+>> that's it. Okay. All right. Good. That's
+uh that's fun. Claude is awesome.
+>> [laughter]
+>> I dread it being
+if you want to see where it came from,
+just scroll down to the bottom of that
+page, Lewis, and just click on the view
+on GitHub link there.
+>> So, I've put the um
+>> all all the uh prompts and stuff that I
+use to generate it in here. If you're
+interested, all you need to do is
+download the transcript and give it to
+Claude Coat.
+>> That is the worst name I've ever seen
+for a product. Meeting summarizer.
+>> That's what it does.
+Yak shave is way better. [laughter]
+>> Yeah, I think uh Julie and I need to do
+>> I stom
+>> I called it tiger separately, but I
+think he repo.
+>> Yes. All right.
+>> Yeah. All right. You What did you say?
+What did you say before?
+>> I'm I'm terrified of this being invited
+to or being one of my meetings being
+analyzed for this. I think it's going to
+take me a new one.
+>> Yes. We'll have it for our board meet.
+We'll see what it does.
+>> Yeah, we're all in the same room. I
+don't think it'll work. We'll see how we
+go.
+>> Oh, you'll be surprised.
+>> Oh, yeah.
+>> All right.
+>> This meeting will be on YouTube. Um,
+I'll see you next week.
+>> Thank you guys.
+>> Bye.
+>> All right. See you.
+>> Bye.
+>> We're good.
