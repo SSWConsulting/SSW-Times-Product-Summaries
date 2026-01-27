@@ -1,6 +1,0 @@
-- Desktop workflow UI refactor shipped: per‑step status and errors, independent step handling, easier debugging and scaling.
-- Easier onboarding in the desktop app: one‑click connect to preset MCP servers (GitHub, Azure DevOps) in the wizard; custom MCP still supported; login screen facelift.
-- Portal updates: projects page shows a backlog icon instead of the full URL; “Recent work items” renamed to “Recent shaves”; project details now shows recent shaves count.
-- Portal bug fixed: dashboard null-link crash resolved (fallback to title when URL is null); production source maps added to speed up debugging.
-- Prompt quality upgrade (desktop): default prompt now de‑duplicates and follows the template better; auto-detects possible duplicates and cross‑links; emojis restored in titles.
-- Backend/ops improvements: persistent OAuth for GitHub MCP and a local DB schema for activity tracking; workflow tougher against YouTube metadata issues; Teams app moved to GPT‑5.2; desktop shaves now appear on the leaderboard; availability back to 100% after removing an expired test tenant; 9 internal canary test passes completed.
