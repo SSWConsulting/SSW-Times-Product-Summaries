@@ -1,6 +1,8 @@
 ﻿import datetime as _dt
+import http.cookiejar as _cookiejar
 import os as _os
 import re as _re
+import time as _time
 from typing import Iterable, List
 
 from openai import OpenAI
@@ -26,6 +28,8 @@ VERBOSE = True
 OPENAI_MODEL = _os.getenv("OPENAI_MODEL", "gpt-5")
 YTDLP_JS_RUNTIMES = _os.getenv("YTDLP_JS_RUNTIMES")
 YTDLP_FFMPEG_LOCATION = _os.getenv("YTDLP_FFMPEG_LOCATION")
+REQUEST_DELAY = 3  # seconds between YouTube requests to avoid IP bans
+COOKIES_FILE = "cookies.txt"
 MAX_BULLETS = 6
 MAX_PRODUCT_CHARS = 60000
 PLAYLIST_MAX_ITEMS = 12
@@ -100,7 +104,16 @@ def _fetch_video_info(ydl: YoutubeDL, video_id: str) -> dict:
 
 
 def _get_transcript_text(video_id: str) -> str:
-    ytt_api = YouTubeTranscriptApi()
+    import requests
+    cookie_path = _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), COOKIES_FILE)
+    if _os.path.exists(cookie_path):
+        cj = _cookiejar.MozillaCookieJar(cookie_path)
+        cj.load(ignore_discard=True, ignore_expires=True)
+        session = requests.Session()
+        session.cookies = cj
+        ytt_api = YouTubeTranscriptApi(http_client=session)
+    else:
+        ytt_api = YouTubeTranscriptApi()
     try:
         segments = ytt_api.fetch(video_id, languages=["en"])
     except Exception:
@@ -289,6 +302,7 @@ def main() -> int:
                 matches += 1
                 if VERBOSE:
                     print(f"Saved transcript: {out_path}")
+                _time.sleep(REQUEST_DELAY)
 
     print(f"Wrote {matches} file(s) to {out_dir}")
 
