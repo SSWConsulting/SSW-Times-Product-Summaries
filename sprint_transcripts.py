@@ -76,6 +76,25 @@ def _safe_product_filename(product: str) -> str:
     return f"{base}.txt"
 
 
+def _load_cached_transcript(path: str) -> str | None:
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            content = f.read()
+    except OSError:
+        return None
+    if not content:
+        return None
+    parts = content.split("\n\n", 1)
+    if len(parts) < 2:
+        return None
+    body = parts[1].strip()
+    if not body:
+        return None
+    if body.startswith("Transcript unavailable:") or body.startswith("Transcript error:"):
+        return None
+    return body
+
+
 def _within_days(upload_date: str, days: int) -> bool:
     if not upload_date:
         return False
@@ -262,6 +281,22 @@ def main() -> int:
                 url = f"https://www.youtube.com/watch?v={video_id}"
                 filename = _safe_filename(f"{product} - {title}", video_id)
                 out_path = _os.path.join(transcripts_dir, filename)
+
+                cached_transcript = None
+                if _os.path.exists(out_path):
+                    cached_transcript = _load_cached_transcript(out_path)
+                    if cached_transcript is not None:
+                        product_items[product].append(
+                            {
+                                "title": title,
+                                "url": url,
+                                "upload_date": upload_date,
+                                "transcript": cached_transcript,
+                            }
+                        )
+                        if VERBOSE:
+                            print(f"Using cached transcript: {out_path}")
+                        continue
 
                 try:
                     transcript_text = _get_transcript_text(video_id)
