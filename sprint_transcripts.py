@@ -211,6 +211,8 @@ def main() -> int:
     run_date = _dt.date.today().isoformat()
     out_dir = _os.path.join(_os.getcwd(), run_date)
     _os.makedirs(out_dir, exist_ok=True)
+    transcripts_dir = _os.path.join(out_dir, "Transcripts")
+    _os.makedirs(transcripts_dir, exist_ok=True)
 
     ydl_opts = {
         "quiet": True,
@@ -259,7 +261,7 @@ def main() -> int:
 
                 url = f"https://www.youtube.com/watch?v={video_id}"
                 filename = _safe_filename(f"{product} - {title}", video_id)
-                out_path = _os.path.join(out_dir, filename)
+                out_path = _os.path.join(transcripts_dir, filename)
 
                 try:
                     transcript_text = _get_transcript_text(video_id)
@@ -312,9 +314,8 @@ def main() -> int:
         return 0
 
     client = OpenAI()
+    results_lines: List[str] = []
     for product in PLAYLISTS:
-        summary_path = _os.path.join(out_dir, _safe_product_filename(product))
-
         if product in skipped_products:
             summary_text = "- Playlist URL not set for this product."
         else:
@@ -328,10 +329,15 @@ def main() -> int:
                 except Exception as e:
                     summary_text = f"- Summary error: {type(e).__name__}: {e}"
 
-        with open(summary_path, "w", encoding="utf-8") as f:
-            f.write(summary_text + "\n")
-        if VERBOSE:
-            print(f"Saved summary: {summary_path}")
+        results_lines.append(product)
+        results_lines.append(summary_text.strip())
+        results_lines.append("")
+
+    results_path = _os.path.join(out_dir, "Results.txt")
+    with open(results_path, "w", encoding="utf-8") as f:
+        f.write("\n".join(results_lines).rstrip() + "\n")
+    if VERBOSE:
+        print(f"Saved results: {results_path}")
 
     return 0
 
